@@ -922,6 +922,13 @@ body{
     fill: var(--aqua-color);
 }
 
+/* mobile navigation */
+.js_menu_container{
+    display: hidden;
 
-
+}
+.js-open-menu svg{
+    width: 40px;
+    height: 40px;
+}
 
