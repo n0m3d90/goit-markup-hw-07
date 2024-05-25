@@ -1067,6 +1067,7 @@ body{
       flex-direction: column;
       align-items: flex-start;
       margin-left: 40px;
+      margin-top: 300px;
   }
   .header__info1{
     font-size: 34px;
@@ -1153,6 +1154,10 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
+
+}
+.footer_label_input{
+  align-self: center;
 
 }
 
