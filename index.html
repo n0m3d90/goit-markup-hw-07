@@ -5,32 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>prima-tema-html</title>
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./portofolio.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-   <!--header section-->
-   <header class="header">
-    <div class="container">
-        <div class="header__logo">
+   
+    <!--header section-->
+    <header class="header">
+        <div class="header__logo_mobile">
             <a href="#"><p><span>Web</span>Studio</p></a>
         </div>
+
+        <div class="container">
+            <div class="header__logo">
+                <a href="#"><p><span>Web</span>Studio</p></a>
+            </div>
+            <div class="header__navigation">
+                <nav>
+                    <ul>
+                        <li><a class="active" href="index.html">Studio</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header_info">
+                <div class="header__info1">
+                    <a class="header__info1" href="mailto:info@devstudio.com">
+                        <svg><use href="./images/sprite.svg#envelope-hover"></use></svg>
+                        info@devstudio.com
+                    </a>
+                </div>
+                <div class="header__info2">
+                    <a class="header__info2" href="tel:+1-212-772-4150">
+                        <svg><use href="./images/sprite.svg#smartphone"></use></svg>
+                        +1-212-772-4150
+                    </a>
+                </div>
+            </div>
+        </div>
+        <button class="js-open-menu button button-toggle-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg><use href="./images/sprite.svg#icon-menu_svg"></use></svg>
+        </button>
+    </header>
+
+    <div class="js-menu-container">
+        <button type="button" class="js-close-menu button button-close-menu">X</button>
         <nav class="header__navigation">
             <ul>
-                <li ><a class="active" href="index.html">Studio</a></li>
-                <li ><a  href="portofolio.html">Portfolio</a></li>
-                <li ><a  href="#">Contacts</a></li>
+                <li><a class="active" href="index.html">Studio</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#">Contacts</a></li>
             </ul>
         </nav>
         <div class="header_info">
-                <div class="header__info1"><a class="header__info1" href="mailto:info@devstudio.com"><svg><use href="./images/sprite.svg#envelope-(hover)"></use></svg>info@devstudio.com</a></div>
-                <div class="header__info2"><a class="header__info2" href="tel:+1-212-772-4150"> <svg><use href="./images/sprite.svg#smartphone"></use></svg>+1-212-772-4150</a></div>
+            <div class="header__info1">
+                <a class="header__info1" href="mailto:info@devstudio.com">
+                    <svg><use href="./images/sprite.svg#envelope-hover"></use></svg>
+                    info@devstudio.com
+                </a>
+            </div>
+            <div class="header__info2">
+                <a class="header__info2" href="tel:+1-212-772-4150">
+                    <svg><use href="./images/sprite.svg#smartphone"></use></svg>
+                    +1-212-772-4150
+                </a>
+            </div>
+        </div>
+        <div>
+            <ul class="js_media">
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
         </div>
     </div>
-</header>
 
 <!--main section-->
 <main>
@@ -43,7 +96,7 @@
     </section>
 
 
-<!--qualities section-->
+    <!--qualities section-->
 <section class="qualities">
     <div class="container">
         <ul class="qualities_list">
@@ -76,8 +129,8 @@
     </div>
 </section>
 
- <!--what we do section-->
- <section class="what_we_do">
+<!--what we do section-->
+<section class="what_we_do">
     <div class="container">
         <h2>What we do</h2>
         <div class="what_we_do_img">
@@ -108,77 +161,79 @@
 
 
  <!--our team section-->
-        <section class="our_team">
-            <div class="container">
-                <h2>Our Team</h2>
-                <div class="our_team_cards">
-                    <ul>
-                        <!--card 1-->
-                    <li>
-                        <div>
-                        <img src="./images/christopher-walker-image1.jpg" alt="christopher-walker-image1" width="300">
-                       <p class="our_team_p1">Christopher Walker</p>
-                       <p class="our_team_p2">Product Designer</p>
-                       <div class="our_team_media">
-                        <ul>
-                        <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#linkedin" /></svg></a></li>
-                        <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#twitter" /></svg></a></li>
-                        <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#facebook" /></svg></a></li>
-                        <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#instagram" /></svg></a></li>
-                        </ul>
-                       </div>
-                    </div>   
-                   </li>
-                   <!--card 2-->
-                   <li>
+ <section class="our_team">
+    <div class="container">
+        <h2>Our Team</h2>
+        <div class="our_team_cards">
+            <ul>
+                <!--card 1-->
+                <li>
                     <div>
-                    <img src="./images/kylie-evans-image2.jpg" alt="kylie evans" width="300">
-                       <p class="our_team_p1">Kylie Evans</p>
-                       <p class="our_team_p2">Frontend Developer</p>
-                       <div class="our_team_media">
-                        <ul>
-                        <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#linkedin" /></svg></a></li>
-                        <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#twitter" /></svg></a></li>
-                        <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#facebook" /></svg></a></li>
-                        <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#instagram" /></svg></a></li>
-                        </ul>
-                       </div>
-                   </div>       
-                   </li>
-                   <!--card 3-->
-                   <li>
-                    <div><img src="./images/ryan-harris-image3.jpg" alt="ryan harris" width="300">
-                    <p class="our_team_p1">Ryan Harris</p>
-                    <p class="our_team_p2">Marketing</p>
-                    <div class="our_team_media">
-                     <ul>
-                        <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#linkedin" /></svg></a></li>
-                        <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#twitter" /></svg></a></li>
-                        <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#facebook" /></svg></a></li>
-                        <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#instagram" /></svg></a></li>
-                     </ul>
+                        <img src="./images/christopher-walker-image1.jpg" alt="Christopher Walker" width="300">
+                        <p class="our_team_p1">Christopher Walker</p>
+                        <p class="our_team_p2">Product Designer</p>
+                        <div class="our_team_media">
+                            <ul>
+                                <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#linkedin" /></svg></a></li>
+                                <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#twitter" /></svg></a></li>
+                                <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#facebook" /></svg></a></li>
+                                <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#instagram" /></svg></a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>  
-                   </li>
-                   <!--card 4-->
-                   <li>
-                    <div><img src="./images/tyler-moore-image4.jpg" alt="tyler moore" width="300">
-                    <p class="our_team_p1">Tyler Moore</p>
-                    <p class="our_team_p2">UI Designer</p>
-                    <div class="our_team_media">
-                       <ul>
-                          <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#linkedin" /></svg></a></li>
-                          <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#twitter" /></svg></a></li>
-                          <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#facebook" /></svg></a></li>
-                          <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#instagram" /></svg></a></li>
-                        </ul>
+                </li>
+                <!--card 2-->
+                <li>
+                    <div>
+                        <img src="./images/kylie-evans-image2.jpg" alt="Kylie Evans" width="300">
+                        <p class="our_team_p1">Kylie Evans</p>
+                        <p class="our_team_p2">Frontend Developer</p>
+                        <div class="our_team_media">
+                            <ul>
+                                <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#linkedin" /></svg></a></li>
+                                <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#twitter" /></svg></a></li>
+                                <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#facebook" /></svg></a></li>
+                                <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#instagram" /></svg></a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                   </li>
-                   
-               </div>
-            </div>
-        </section>
+                </li>
+                <!--card 3-->
+                <li>
+                    <div>
+                        <img src="./images/ryan-harris-image3.jpg" alt="Ryan Harris" width="300">
+                        <p class="our_team_p1">Ryan Harris</p>
+                        <p class="our_team_p2">Marketing</p>
+                        <div class="our_team_media">
+                            <ul>
+                                <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#linkedin" /></svg></a></li>
+                                <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#twitter" /></svg></a></li>
+                                <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#facebook" /></svg></a></li>
+                                <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#instagram" /></svg></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <!--card 4-->
+                <li>
+                    <div>
+                        <img src="./images/tyler-moore-image4.jpg" alt="Tyler Moore" width="300">
+                        <p class="our_team_p1">Tyler Moore</p>
+                        <p class="our_team_p2">UI Designer</p>
+                        <div class="our_team_media">
+                            <ul>
+                                <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#linkedin" /></svg></a></li>
+                                <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#twitter" /></svg></a></li>
+                                <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#facebook" /></svg></a></li>
+                                <li><a href="#"><svg class="icon"><use href="./images/sprite.svg#instagram" /></svg></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
 
          <!--Regular customers-->
          <section class="regular_customers">
@@ -199,7 +254,8 @@
             </div> 
         </section>
     </main>
-<!--footer section-->
+
+    <!--footer section-->
 <footer class="footer">
     <div class="container">
         <div>
@@ -223,15 +279,22 @@
         </div>
         <div class="footer_form">
             <p>Subscribe to the newsletter</p>
-            <label class="footer_label">
-                <input class="footer_label_input" type="e-mail" name="useremail" placeholder="insert e-mail">
-            <button class="footer_form_button" type="submit">Subscribe <svg><use href="./images/sprite.svg#icon-icon-send"></use></svg></button>
-        </div>
+            <div>
+                <label class="footer_label">
+                    <input class="footer_label_input" type="email" name="useremail" placeholder="insert e-mail">
+                </label>
+                <button class="footer_form_button" type="submit">
+                    Subscribe 
+                    <svg><use href="./images/sprite.svg#icon-icon-send"></use></svg>
+                </button>
+            </div>
+        </div>     
     </div>
     
     </footer>
 
-    <!--modal section-->
+    
+<!--modal section-->
 <div data-modal class="is-hidden">
     <div data-modal-content>
         <button data-modal-close type="button">X</button>
@@ -266,7 +329,13 @@
 
     </div>
 </div>
-<script src="./js/mobile-menu.js"></script>
-<script src="./js/modal.js"></script>
-</body>
 
+
+
+
+
+
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+</body>
+</html>
