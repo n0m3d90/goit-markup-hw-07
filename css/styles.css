@@ -1156,6 +1156,9 @@ body{
         align-items: center;
 
 }
+.footer_form {
+  margin: 0 15px;
+}
 .footer_label_input{
   align-self: center;
   width: 440px;
