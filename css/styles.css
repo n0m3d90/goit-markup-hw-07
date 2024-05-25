@@ -1096,11 +1096,13 @@ body{
     padding-bottom: 24px;
     margin-left: 15px;
   }
+/* modal section */
+[data-modal-section]{
+  width: 400px;
+}
+
 /* mobile section menu */
-  .js-menu-container{
-    display: none;
-    flex-direction: column;
-  }
+
 
   .js-open-menu{
     display:flex ;
