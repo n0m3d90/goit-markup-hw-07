@@ -1067,7 +1067,7 @@ body{
       flex-direction: column;
       align-items: flex-start;
       margin-left: 40px;
-      margin-top: 300px;
+      margin-top: 250px;
   }
   .header__info1{
     font-size: 34px;
@@ -1133,6 +1133,7 @@ body{
     text-decoration: none;
     font-size: 18px;
   }
+  
 /* solutions section */
   .solutions{
     background-image: linear-gradient(180deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-image@x2.jpg);
